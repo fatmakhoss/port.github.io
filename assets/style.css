@@ -1,0 +1,298 @@
+/* General Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #dbe5ed;
+  color: #dadfe4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hero Section */
+.hero.is-link {
+  background-color: #a8bcd6; 
+  color: rgb(210, 228, 236);
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero .title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: rgb(208, 217, 227);
+}
+
+.hero .subtitle {
+  font-size: 1.5rem;
+  color: rgb(203, 213, 218);
+  margin-top: 20px;
+}
+
+.hero .buttons .button {
+  margin: 10px;
+  font-size: 1.1rem;
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
+/* Section Title Styling */
+.title.is-2 {
+  color: #c1cfd7;
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.section {
+  padding: 50px 0;
+  background-color: rgb(129, 141, 140);
+  margin-bottom: 20px;
+}
+
+.content-box {
+  background-color: #243b52;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(191, 206, 214, 0.993);
+}
+
+/* Navbar Customization */
+.navbar.is-link {
+  background-color: #4d4f6f; /* Match hero background */
+  color: rgb(90, 101, 129);
+}
+
+.navbar-item.has-text-white {
+  color: rgb(167, 188, 206) !important;
+}
+
+.navbar-burger {
+  color: rgb(182, 194, 210);
+}
+
+.navbar-menu {
+  background-color: #adb4b3;
+}
+
+.navbar-burger.is-active span {
+  background-color: rgb(169, 165, 165);
+}
+
+/* Footer Styling */
+.footer {
+  background-color: #52575b;
+  color: rgb(93, 94, 98);
+  padding: 30px 0;
+}
+
+.footer p {
+  font-size: 1.2rem;
+  color: rgb(120, 128, 145);
+}
+
+.footer .columns {
+  justify-content: center;
+}
+
+.footer .button.is-link.is-outlined {
+  margin: 10px;
+  color: rgb(156, 165, 177);
+  border: 1px solid rgb(177, 195, 209);
+}
+
+.footer .button.is-link.is-outlined:hover {
+  background-color: rgb(58, 91, 174);
+  color: #868d8c;
+}
+
+/* Custom Bullet List */
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: #848181;
+}
+
+ul li strong {
+  font-weight: bold;
+}
+
+/* Customizing Columns */
+.columns.is-centered {
+  display: flex;
+  justify-content: center;
+}
+
+.column.is-half {
+  max-width: 800px;
+}
+
+@media (max-width: 768px) {
+  .hero .title {
+    font-size: 2rem;
+  }
+
+  .hero .subtitle {
+    font-size: 1.2rem;
+  }
+
+  .navbar-menu {
+    background-color: #55565b;
+  }
+
+  .footer .button.is-link.is-outlined {
+    width: 100%;
+  }
+
+  .columns.is-centered {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .column.is-half {
+    width: 90%;
+  }
+}
+
+
+.navbar {
+  background-color: #4851d1;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.card-content {
+  text-align: center;
+}
+
+.modal-content {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.modal-background {
+  background-color: rgba(141, 136, 136, 0.5);
+}
+
+/* Footer styling */
+.footer {
+  background-color: #467fd6;
+  color: rgb(72, 74, 77);
+  padding: 10px;
+}
+
+.footer p {
+  margin: 0;
+}
+
+
+.navbar {
+  background-color: #3273dc;
+}
+
+.navbar .navbar-item {
+  color: #7f7c7c;
+}
+
+.navbar .navbar-item:hover {
+  color: #4c4c4c;
+}
+
+/* Section */
+.section {
+  padding: 4rem 1.5rem;
+}
+
+.form-container {
+  max-width: 500px;
+  margin: 0 auto;
+  background-color: #f3ebeb;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(244, 240, 240, 0.1);
+  padding: 2rem;
+}
+
+.form-header {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #e3e4e6;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.field {
+  margin-bottom: 1.5rem;
+}
+
+/* Champs de formulaire */
+.input {
+  border-radius: 4px;
+  border: 1px solid #e4e0e0;
+  padding: 0.75rem;
+  width: 100%;
+}
+
+.input:focus {
+  border-color: #e8eaed;
+  box-shadow: 0 0 0 0.2rem rgba(240, 241, 244, 0.25);
+}
+
+/* Boutons */
+.button {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.button.is-link {
+  background-color: white;
+  color: rgb(62, 80, 136);
+}
+
+.button.is-link {
+  background-color: white;
+  color: rgb(57, 76, 156);
+}
+
+.button.is-link:hover,
+.button.is-link:hover {
+  background-color: white;
+  color: rgb(80, 93, 188);
+}
+
+/* Switch de formulaire */
+.form-switch {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.form-switch a {
+  color: #789bd4;
+  text-decoration: underline;
+}
+
+.form-switch a:hover {
+  color: #8eb3e0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1.5rem;
+  }
+  
+  .title {
+    font-size: 1.5rem;
+  }
+}
+
