@@ -1,220 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Restaurant Menu</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
-  <link rel="stylesheet" href="assets/style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma/css/bulma.min.css">
+<link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
-  <!-- Navbar -->
-  <nav class="navbar is-dark">
+<!-- Navbar -->
+<nav class="navbar is-dark">
     <div class="navbar-brand">
-      <a class="navbar-item" href="index.html">Home</a>
-      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+    <a class="navbar-item" href="index.html">Home</a>
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>
-      </a>
+    </a>
     </div>
     <div id="navbar-menu" class="navbar-menu">
-      <div class="navbar-start">
+    <div class="navbar-start">
         <a href="#menu" class="navbar-item">Menu</a>
         <a href="#contact" class="navbar-item">Contact</a>
-      </div>
     </div>
-  </nav>
+    </div>
+</nav>
 
-  <!-- Menu Section -->
-  <section class="section" id="menu">
+<!-- Menu Section -->
+<section class="section" id="menu">
     <div class="container">
-      <h1 class="title has-text-centered">Restaurant Menu</h1>
-      <div class="columns is-multiline">
+    <h1 class="title has-text-centered">Restaurant Menu</h1>
+    <div class="columns is-multiline">
         <!-- Menu Item 1: Pizza -->
         <div class="column is-12-mobile is-6-tablet is-4-desktop">
-          <div class="card">
+        <div class="card">
             <div class="card-content">
-              <p class="title">Pizza</p>
-              <p class="subtitle">Delicious cheese pizza</p>
-              <button class="button is-link" data-target="pizza-modal" onclick="openModal('pizza-modal')">View Details</button>
+            <p class="title">Pizza</p>
+            <p class="subtitle">Delicious cheese pizza</p>
+            <button class="button is-link" data-target="pizza-modal" onclick="openModal('pizza-modal')">View Details</button>
             </div>
             <div class="modal" id="pizza-modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
-                  <div class="box">
+                <div class="box">
                     <h1 class="title">Pizza</h1>
                     <p><strong>Price:</strong> $12.99</p>
                     <p><strong>Description:</strong> Our pizza is made with a crispy crust, fresh mozzarella cheese, tomato sauce, and a sprinkle of basil. A perfect choice for pizza lovers!</p>
                     <h3 class="subtitle">Ingredients:</h3>
                     <ul>
-                      <li>Fresh Mozzarella</li>
-                      <li>Tomato Sauce</li>
-                      <li>Crispy Crust</li>
-                      <li>Fresh Basil</li>
-                      <li>Olive Oil</li>
+                    <li>Fresh Mozzarella</li>
+                    <li>Tomato Sauce</li>
+                    <li>Crispy Crust</li>
+                    <li>Fresh Basil</li>
+                    <li>Olive Oil</li>
                     </ul>
                     <h3 class="subtitle">Allergens:</h3>
                     <ul>
-                      <li>Gluten</li>
-                      <li>Dairy</li>
+                    <li>Gluten</li>
+                    <li>Dairy</li>
                     </ul>
                     <p><strong>Calories:</strong> 250 per slice</p>
                     <button class="button is-danger" onclick="closeModal('pizza-modal')">Close</button>
-                  </div>
                 </div>
-              </div>
-              
-          </div>
+                </div>
+            </div>
+            </div>
         </div>
 
         <!-- Menu Item 2: Burger -->
         <div class="column is-12-mobile is-6-tablet is-4-desktop">
-          <div class="card">
+        <div class="card">
             <div class="card-content">
-              <p class="title">Burger</p>
-              <p class="subtitle">Juicy beef burger</p>
-              <button class="button is-link" data-target="burger-modal" onclick="openModal('burger-modal')">View Details</button>
+            <p class="title">Burger</p>
+            <p class="subtitle">Juicy beef burger</p>
+            <button class="button is-link" data-target="burger-modal" onclick="openModal('burger-modal')">View Details</button>
             </div>
             <div class="modal" id="burger-modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
-                  <div class="box">
+                <div class="box">
                     <h1 class="title">Juicy Beef Burger</h1>
                     <p><strong>Price:</strong> $10.99</p>
                     <p><strong>Description:</strong> A juicy beef patty served with fresh lettuce, tomato, onions, pickles, and our special burger sauce, all packed into a soft, toasted bun.</p>
                     <h3 class="subtitle">Ingredients:</h3>
                     <ul>
-                      <li>Beef Patty</li>
-                      <li>Lettuce</li>
-                      <li>Tomato</li>
-                      <li>Pickles</li>
-                      <li>Onions</li>
-                      <li>Special Burger Sauce</li>
-                      <li>Toasted Bun</li>
+                    <li>Beef Patty</li>
+                    <li>Lettuce</li>
+                    <li>Tomato</li>
+                    <li>Pickles</li>
+                    <li>Onions</li>
+                    <li>Special Burger Sauce</li>
+                    <li>Toasted Bun</li>
                     </ul>
                     <h3 class="subtitle">Allergens:</h3>
                     <ul>
-                      <li>Gluten</li>
-                      <li>Dairy (in the sauce)</li>
+                    <li>Gluten</li>
+                    <li>Dairy (in the sauce)</li>
                     </ul>
                     <p><strong>Calories:</strong> 450 per burger</p>
                     <button class="button is-danger" onclick="closeModal('burger-modal')">Close</button>
-                  </div>
                 </div>
-              </div>
-              
-          </div>
+                </div>
+                </div>
+            </div>
         </div>
 
         <!-- Menu Item 3: Pasta -->
         <div class="column is-12-mobile is-6-tablet is-4-desktop">
-          <div class="card">
+        <div class="card">
             <div class="card-content">
-              <p class="title">Pasta</p>
-              <p class="subtitle">Creamy Alfredo pasta</p>
-              <button class="button is-link" data-target="pasta-modal" onclick="openModal('pasta-modal')">View Details</button>
+            <p class="title">Pasta</p>
+            <p class="subtitle">Creamy Alfredo pasta</p>
+            <button class="button is-link" data-target="pasta-modal" onclick="openModal('pasta-modal')">View Details</button>
             </div>
             <div class="modal" id="pasta-modal">
                 <div class="modal-background"></div>
                 <div class="modal-content">
-                  <div class="box">
+                <div class="box">
                     <h1 class="title">Creamy Alfredo Pasta</h1>
                     <p><strong>Price:</strong> $14.99</p>
                     <p><strong>Description:</strong> A classic creamy Alfredo pasta made with fettuccine, rich Parmesan cheese, butter, and a touch of garlic, all blended to perfection.</p>
                     <h3 class="subtitle">Ingredients:</h3>
                     <ul>
-                      <li>Fettuccine Pasta</li>
-                      <li>Heavy Cream</li>
-                      <li>Parmesan Cheese</li>
-                      <li>Butter</li>
-                      <li>Garlic</li>
-                      <li>Black Pepper</li>
-                      <li>Parsley (for garnish)</li>
+                    <li>Fettuccine Pasta</li>
+                    <li>Heavy Cream</li>
+                    <li>Parmesan Cheese</li>
+                    <li>Butter</li>
+                    <li>Garlic</li>
+                    <li>Black Pepper</li>
+                    <li>Parsley (for garnish)</li>
                     </ul>
                     <h3 class="subtitle">Allergens:</h3>
                     <ul>
-                      <li>Gluten</li>
-                      <li>Dairy</li>
-                      <li>Garlic</li>
+                    <li>Gluten</li>
+                    <li>Dairy</li>
+                    <li>Garlic</li>
                     </ul>
                     <p><strong>Calories:</strong> 600 per serving</p>
                     <button class="button is-danger" onclick="closeModal('pasta-modal')">Close</button>
-                  </div>
                 </div>
-              </div>
-              
-          </div>
+                </div>
+            </div>    
         </div>
-      </div>
+        </div>
     </div>
-  </section>
+    </div>
+</section>
 
-  <!-- Modals for item details -->
-  <!-- Pizza Modal -->
-  <div class="modal" id="pizza-modal">
+<!-- Modals for item details -->
+<!-- Pizza Modal -->
+<div class="modal" id="pizza-modal">
     <div class="modal-background"></div>
     <div class="modal-content">
-      <div class="box">
+    <div class="box">
         <h1 class="title">Pizza</h1>
         <p>Our pizza is made with the finest ingredients: fresh mozzarella, tomato sauce, and a crispy crust. Perfect for any occasion!</p>
         <button class="button is-danger" onclick="closeModal('pizza-modal')">Close</button>
-      </div>
     </div>
-  </div>
+    </div>
+</div>
 
-  <!-- Burger Modal -->
-  <div class="modal" id="burger-modal">
+<!-- Burger Modal -->
+<div class="modal" id="burger-modal">
     <div class="modal-background"></div>
     <div class="modal-content">
-      <div class="box">
+    <div class="box">
         <h1 class="title">Burger</h1>
         <p>Our burger is made with 100% beef, freshly grilled, and served with a delicious combination of toppings. A classic favorite!</p>
         <button class="button is-danger" onclick="closeModal('burger-modal')">Close</button>
-      </div>
     </div>
-  </div>
+    </div>
+</div>
 
-  <!-- Pasta Modal -->
-  <div class="modal" id="pasta-modal">
+<!-- Pasta Modal -->
+<div class="modal" id="pasta-modal">
     <div class="modal-background"></div>
     <div class="modal-content">
-      <div class="box">
+    <div class="box">
         <h1 class="title">Pasta</h1>
         <p>Our pasta is made with rich cream and Parmesan cheese, served with perfectly cooked fettuccine. A creamy delight!</p>
         <button class="button is-danger" onclick="closeModal('pasta-modal')">Close</button>
-      </div>
     </div>
-  </div>
+    </div>
+</div>
 
-  <!-- Footer -->
-  <footer class="footer">
+<!-- Footer -->
+<footer class="footer">
     <div class="card-content" id="contact">
         <h2 class="title is-4">Contact</h2>
         <p>Email: <strong>fatma9@example.com</strong></p>
         <p>Numero: <strong>+21624239571</strong></p>
-      </div>
-      
+    </div>   
     <div class="content has-text-centered">
-      <p>&copy; 2024 Restaurant Name. All Rights Reserved.</p>
+    <p>&copy; 2024 Restaurant Name. All Rights Reserved.</p>
     </div>
-  </footer>
+</footer>
 
-  <script>
+<script>
     // Open modal function
     function openModal(modalId) {
-      document.getElementById(modalId).classList.add('is-active');
+    document.getElementById(modalId).classList.add('is-active');
     }
 
     // Close modal function
     function closeModal(modalId) {
-      document.getElementById(modalId).classList.remove('is-active');
+    document.getElementById(modalId).classList.remove('is-active');
     }
 
     // Toggle the navbar menu on mobile
     document.querySelector('.navbar-burger').addEventListener('click', () => {
-      document.querySelector('#navbar-menu').classList.toggle('is-active');
+    document.querySelector('#navbar-menu').classList.toggle('is-active');
     });
-  </script>
+</script>
 </body>
 </html>
